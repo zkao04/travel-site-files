@@ -913,14 +913,14 @@ a {
   }
   }
 
-.feature-item{
+.feature-item {
   position: relative;
   padding-bottom: 2.5rem;
 }
 
 @media (min-width: 530px){
 
-.feature-item{
+.feature-item {
     padding-left: 94px
 }
   }
@@ -1333,4 +1333,18 @@ a {
       padding: 12px 0;
       background-color: transparent
   }
+  }
+
+.reveal-item {
+  opacity: 0;
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.reveal-item__is-visible {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
